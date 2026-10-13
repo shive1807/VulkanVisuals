@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /Users/shivambhati/Documents/GitHub/VulkanVisuals/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/VulkanVisuals.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen:
+codegen: CMakeFiles/VulkanVisuals.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,8 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: CMakeFiles/VulkanVisuals.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/VulkanVisuals.dir
+
+# All Build rule for target.
+CMakeFiles/VulkanVisuals.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VulkanVisuals.dir/build.make CMakeFiles/VulkanVisuals.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VulkanVisuals.dir/build.make CMakeFiles/VulkanVisuals.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/VulkanVisuals/build/CMakeFiles --progress-num=1,2 "Built target VulkanVisuals"
+.PHONY : CMakeFiles/VulkanVisuals.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/VulkanVisuals.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shivambhati/Documents/GitHub/VulkanVisuals/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/VulkanVisuals.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shivambhati/Documents/GitHub/VulkanVisuals/build/CMakeFiles 0
+.PHONY : CMakeFiles/VulkanVisuals.dir/rule
+
+# Convenience name for target.
+VulkanVisuals: CMakeFiles/VulkanVisuals.dir/rule
+.PHONY : VulkanVisuals
+
+# codegen rule for target.
+CMakeFiles/VulkanVisuals.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VulkanVisuals.dir/build.make CMakeFiles/VulkanVisuals.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/VulkanVisuals/build/CMakeFiles --progress-num=1,2 "Finished codegen for target VulkanVisuals"
+.PHONY : CMakeFiles/VulkanVisuals.dir/codegen
+
+# clean rule for target.
+CMakeFiles/VulkanVisuals.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VulkanVisuals.dir/build.make CMakeFiles/VulkanVisuals.dir/clean
+.PHONY : CMakeFiles/VulkanVisuals.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
